@@ -1,0 +1,50 @@
+.flash-box
+  .notice
+    グループを編集しました
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name
+          ai
+        %ul.side-header__box__menu
+          %li.side-header__box__menu__new-
+          %li.side-header__box__menu__edit-header__box__user
+    .groups
+      .group
+        .group__group-name
+          sample-group
+        .group__latest-message
+          text-text
+
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group
+          sample-group
+        %ul.main-header__left-box__member-list
+          Member：
+          %li.main-header__left-box__member-list__member
+            ai
+      = link_to "https://www.facebook.com/", class: "main-header__edit-btn" do
+        Edit
+    .messages
+      .message
+        .message__upper-info
+          %p.message__upper-info__talker ai
+          %p.message__upper-info__date 2019/11/05(Tue) 17:52:50
+        %p.message__text test-text
+          
+    .form
+      %form.new_message#new_message
+        .input-box
+          %input.input-box__text{placeholder: "type a message"}
+            %label.input-box__image
+              %i.fa-image.fa
+              %input.input-box__image__file
+        %input.submit-btn{name:"commit",type:"submit",value: "Send"}
+
+
+
+
+
