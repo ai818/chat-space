@@ -8,8 +8,10 @@
         %p.side-header__box__user-name
           ai
         %ul.side-header__box__menu
-          %li.side-header__box__menu__new-
-          %li.side-header__box__menu__edit-header__box__user
+          %li.side-header__box__menu__new-group
+            %i.fa-edit.fa
+          %li.side-header__box__menu__edit-user
+            %i.fa-cog.fa
     .groups
       .group
         .group__group-name
@@ -38,11 +40,11 @@
     .form
       %form.new_message#new_message
         .input-box
-          %input.input-box__text{placeholder: "type a message"}
-            %label.input-box__image
-              %i.fa-image.fa
-              %input.input-box__image__file
-        %input.submit-btn{name:"commit",type:"submit",value: "Send"}
+          %input.input-box__text#message_content{placeholder: "type a message",type: "text", name: "message[content]"}
+            %label.input-box__image{for:"message_image"}
+              %i.fa.fa-image
+              %input.input-box__image__file#message_image{name: "message[image]", type: "file"}
+        %input.submit-btn{name: "commit",type: "submit",value: "Send", "data-disable-with":"Send"}
 
 
 
