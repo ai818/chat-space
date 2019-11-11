@@ -21,8 +21,6 @@ $(function(){
   }
 
   $('#new_message').on ('submit', function(e){
-    e.preventDefault();
-    console.log("発火したで")
     let formData = new FormData(this);
     let url = $(this).attr('action');
   
