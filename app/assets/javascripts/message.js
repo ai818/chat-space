@@ -1,6 +1,6 @@
 $(function(){
   function buildMessage(message){
-    let image = message.image? `<img class="input-box__image" src=${message.image.url}>` : "";
+    let image = message.image? `<img class="input-box__image" src=${message.image}>` : "";
     let html=  `<div class="message">
                   <div class="message__upper-info">
                     <p class="message__upper-info__talker">
