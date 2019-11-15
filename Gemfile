@@ -77,3 +77,5 @@ gem 'factory_bot_rails'
 gem 'faker'
 
 gem 'fog-aws'
+
+gem 'font-awesome-sass'
