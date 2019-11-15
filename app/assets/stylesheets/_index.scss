@@ -57,7 +57,7 @@ $btn-blue: #38aef0;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 23px 20px 0;
-    // overflow: scroll;
+    overflow: scroll;
     .group{
       &__name{
         font-size: 15px;
@@ -137,8 +137,6 @@ $btn-blue: #38aef0;
     height: 50px;
     padding: 20px 40px;
     background-color: #ddd;
-    display: absolute;
-    overflow: visible;
     
     form{
       display: flex;

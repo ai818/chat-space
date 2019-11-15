@@ -21,6 +21,7 @@ $(function(){
   }
 
   $('#new_message').on ('submit', function(e){
+    e.preventDefault()
     let formData = new FormData(this);
     let url = $(this).attr('action');
   
@@ -46,7 +47,7 @@ $(function(){
     });
   });
 
-  let reloadMessages = function() {
+  let reloadMessages = function(e) {
     if (window.location.href.match(/\/groups\/\d+\/messages/)){
       let last_message_id = $('.message:last').data("message-id");
       $.ajax({
