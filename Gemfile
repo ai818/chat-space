@@ -78,4 +78,3 @@ gem 'faker'
 
 gem 'fog-aws'
 
-gem 'font-awesome-sass'
